@@ -8,9 +8,9 @@ To push files from local to remote
 git init
 git status
 git add filesyouwantaddedhere
-git commit -m "use -m as message flag and add your commit message in 2xQuotes here"
+git commit -m # "use -m as message flag and add your commit message in 2xQuotes here"
 git remote add origin https://github.com/sudoyashi/python_progress
-git remote -v #the flag "-v" indicates verbose, shows the remote url. Helpful to confirm this will be the correct url to push
+git remote -v # the flag "-v" indicates verbose, shows the remote url. Helpful to confirm this will be the correct url to push
 git push
 ```
 ## Personal Log
