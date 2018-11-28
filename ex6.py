@@ -27,5 +27,5 @@ print(joke_evaluation.format(hilarious))
 w = "This is the left side of ..."
 e = "a string with a right side"
 
-#printing variables with "+" operator 
+#printing variables with "+" operator
 print (w + e)
