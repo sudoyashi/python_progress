@@ -1,5 +1,5 @@
 # python_progress
-Following exercises from "Learn Python the Hard Way" 
+Following exercises from "Learn Python the Hard Way" by Zed Shaw
 
 ## Self Reminders on git commands
 
