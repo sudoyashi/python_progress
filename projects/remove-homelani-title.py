@@ -1,5 +1,5 @@
-# Open all the documents and check to see if the document has a title matching "CAMP HOMELANI", if so, remove it.
-# Open all the documents and change the Author to Marc Nishida
+# Open all the documents and check to see if the document has a title, if so, remove it.
+# Open all the documents and change the Author
 import glob
 import os
 import fnmatch
@@ -15,8 +15,8 @@ for dirpath, dirs, files in os.walk(cwd):
         document = Document(editFile)
         core_properties = document.core_properties
         # If the author filed is not marc's, fill with marc's email
-        if (core_properties.author != 'marcn@gloverltd.com'):
-            core_properties.author = 'marcn@gloverltd.com'
+        if (core_properties.author != 'joshua...email'):
+            core_properties.author = 'joshua...newEmail'
         # Check if title is not empty, make it empty
         if (core_properties.title != ''):
             core_properties.title = ''
