@@ -1,3 +1,5 @@
+# Creates a list of directories if they do not exist. This creates
+# the CDs, software, and drivers directories, as indicated by directory.csv
 import os
 import csv
 from pathlib import Path
@@ -15,9 +17,6 @@ csvFiles = []
 for file in directoryFiles:
     if file.endswith(".csv"):
         csvFiles.append(file)
-
-#for file in directoryFiles:
-#    file = open(os.path.join(pathName)) # command broke because trying to read a directory as a file!
 
 with open('directory.csv') as csvfile:
     reader = csv.reader(csvfile, delimiter=',')
