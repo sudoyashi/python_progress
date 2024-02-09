@@ -1,15 +1,13 @@
 # Open all the documents and check to see if the document has a title, if so, remove it.
 # Open all the documents and change the Author
-import glob
 import os
 import fnmatch
 from docx import Document
 
 # Select all the docx
-# files = glob.glob("*.doc*")
 cwd = os.getcwd()
 for dirpath, dirs, files in os.walk(cwd):
-    for filename in fnmatch.filter(files, '*.doc*'):
+    for filename in fnmatch.filter(files, '*.docx'):
         # print (os.path.join(dirpath, filename))
         editFile = (os.path.join(dirpath, filename))
         document = Document(editFile)
