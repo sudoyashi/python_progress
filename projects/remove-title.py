@@ -12,7 +12,7 @@ for dirpath, dirs, files in os.walk(cwd):
         editFile = (os.path.join(dirpath, filename))
         document = Document(editFile)
         core_properties = document.core_properties
-        # If the author filed is not marc's, fill with marc's email
+        # If the author filed is not ****, fill with **** email
         if (core_properties.author != 'joshua...email'):
             core_properties.author = 'joshua...newEmail'
         # Check if title is not empty, make it empty
